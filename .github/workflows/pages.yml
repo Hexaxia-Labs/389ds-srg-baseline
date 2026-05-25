@@ -1,11 +1,8 @@
 name: Deploy Pages
-# Manual-only for now: the repo is private and GitHub Pages isn't enabled, so an
-# automatic push trigger fails every run. Re-enable the push trigger (below) once
-# Pages is enabled — i.e. the repo is public, or on a Pro/Enterprise org plan.
 on:
+  push:
+    branches: ["main"]
   workflow_dispatch:
-  # push:
-  #   branches: ["main"]
 permissions:
   contents: read
   pages: write
