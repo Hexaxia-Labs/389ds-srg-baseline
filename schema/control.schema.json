@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hexaxia-labs.github.io/389ds-srg-baseline/control.schema.json",
+  "title": "389DS Security Control",
+  "type": "object",
+  "required": [
+    "id", "title", "category", "severity", "control_type",
+    "control_owner", "status", "applicability", "rationale", "mappings",
+    "check", "fix"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^389-(NS|LM|CM|SH|IAM|DPC|IRM|BR|AC)-[0-9]{3}$" },
+    "title": { "type": "string", "minLength": 5 },
+    "category": {
+      "type": "string",
+      "enum": [
+        "network-security", "logging-monitoring", "configuration-management",
+        "system-hardening", "identity-access-management", "data-protection",
+        "incident-response", "backup-recovery", "access-control"
+      ]
+    },
+    "severity": { "type": "string", "enum": ["high", "medium", "low"] },
+    "control_type": { "type": "string", "enum": ["preventive", "detective", "corrective"] },
+    "control_owner": { "type": "string", "minLength": 2 },
+    "status": { "type": "string", "enum": ["stub", "authored", "reviewed"] },
+    "applicability": {
+      "type": "object",
+      "required": ["product", "versions"],
+      "additionalProperties": false,
+      "properties": {
+        "product": { "type": "string" },
+        "versions": { "type": "string" }
+      }
+    },
+    "parameters": { "type": "object" },
+    "mappings": {
+      "type": "object",
+      "required": ["disa_srg", "disa_stig", "nist_800_53", "cce"],
+      "additionalProperties": false,
+      "properties": {
+        "disa_srg": { "type": "array", "items": { "type": "string" } },
+        "disa_stig": { "type": "array", "items": { "type": "string" } },
+        "nist_800_53": { "type": "array", "items": { "type": "string" } },
+        "cce": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "check": {
+      "type": "object",
+      "required": ["summary", "command"],
+      "additionalProperties": false,
+      "properties": {
+        "summary": { "type": "string", "minLength": 5 },
+        "command": { "type": "string", "minLength": 2 },
+        "expected": { "type": "string" }
+      }
+    },
+    "fix": {
+      "type": "object",
+      "required": ["summary", "command"],
+      "additionalProperties": false,
+      "properties": {
+        "summary": { "type": "string", "minLength": 5 },
+        "command": { "type": "string", "minLength": 2 }
+      }
+    },
+    "rationale": { "type": "string", "minLength": 40 },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "url"],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "type": "string" },
+          "url": { "type": "string", "format": "uri" }
+        }
+      }
+    }
+  }
+}

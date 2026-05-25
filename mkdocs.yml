@@ -1,0 +1,45 @@
+site_name: 389DS SRG Baseline
+site_description: An SRG-aligned 389 Directory Server hardening baseline (alpha / draft — not production-ready)
+site_url: https://hexaxia-labs.github.io/389ds-srg-baseline/
+repo_url: https://github.com/Hexaxia-Labs/389ds-srg-baseline
+repo_name: Hexaxia-Labs/389ds-srg-baseline
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - toc.follow
+  palette:
+    # Dark by default (slate), with a toggle to light.
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - toc:
+      permalink: true
+
+hooks:
+  - tools/mkdocs_hooks.py
+
+plugins:
+  - search
