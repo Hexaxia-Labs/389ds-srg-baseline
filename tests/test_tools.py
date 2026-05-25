@@ -106,5 +106,5 @@ def test_schema_rejects_unknown_top_level_key():
     v = Draft202012Validator(_schema())
     ctrl = _minimal_control()
     ctrl["rationale"] = "A sufficiently long rationale string explaining the why in depth."
-    ctrl["remediation"] = {"steps": ["x"]}  # removed field — must now be rejected
+    ctrl["remediation"] = {"steps": ["x"]}  # removed field - must now be rejected
     assert list(v.iter_errors(ctrl))

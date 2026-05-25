@@ -7,6 +7,6 @@ labels: enhancement
 
 **What** you'd like to see
 
-**Why** it matters — the threat addressed or the use case
+**Why** it matters - the threat addressed or the use case
 
 **Notes** (related controls, references, prior art)

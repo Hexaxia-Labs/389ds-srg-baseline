@@ -2,7 +2,7 @@ blank_issues_enabled: false
 contact_links:
   - name: Report a security vulnerability (private)
     url: https://github.com/Hexaxia-Labs/389ds-srg-baseline/security/advisories/new
-    about: Please report security issues privately via GitHub — not as a public issue.
+    about: Please report security issues privately via GitHub - not as a public issue.
   - name: 389 Directory Server documentation
     url: https://www.port389.org/docs/389ds.html
     about: Upstream 389DS documentation.

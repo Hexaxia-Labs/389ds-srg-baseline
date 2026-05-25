@@ -5,7 +5,7 @@ title: Roadmap
 # Roadmap
 
 This catalog is the single source of truth. Later phases generate automation
-from the same control front-matter — no re-authoring.
+from the same control front-matter - no re-authoring.
 
 | Phase | Deliverable | Status |
 | --- | --- | --- |
@@ -19,4 +19,4 @@ from the same control front-matter — no re-authoring.
 This project is licensed **GPL-3.0**. The Phase 4 upstream target,
 [ComplianceAsCode/content](https://github.com/ComplianceAsCode/content), is
 **BSD-3-Clause**. Contributing content upstream will require a relicense or
-dual-license decision. This does not block Phases 1–3.
+dual-license decision. This does not block Phases 1-3.

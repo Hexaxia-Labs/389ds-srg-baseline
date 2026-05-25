@@ -12,8 +12,8 @@ labels: control-accuracy
 
 **389DS version** you observed this on:
 
-**Correct command / behavior** (if known — please include a docs or source link):
+**Correct command / behavior** (if known - please include a docs or source link):
 
 > Reminder: this project is **alpha** and control commands are not yet validated on a
-> live 389 Directory Server. Accuracy corrections are the most valuable contribution —
+> live 389 Directory Server. Accuracy corrections are the most valuable contribution -
 > thank you.

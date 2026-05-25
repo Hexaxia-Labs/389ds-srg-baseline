@@ -5,7 +5,7 @@
 1. Controls live in `docs/controls/<category>/389-XX-NNN.md`.
 2. Each file has YAML front-matter (the contract in `schema/control.schema.json`)
    and a markdown body with `## Discussion` and `## Implementation Notes`.
-3. Do **not** duplicate the check/fix commands in the body — the site renders
+3. Do **not** duplicate the check/fix commands in the body - the site renders
    them from front-matter automatically.
 4. After editing, regenerate indexes and validate:
 

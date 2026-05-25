@@ -1,5 +1,5 @@
 site_name: 389DS SRG Baseline
-site_description: An SRG-aligned 389 Directory Server hardening baseline (alpha / draft — not production-ready)
+site_description: An SRG-aligned 389 Directory Server hardening baseline (alpha / draft - not production-ready)
 site_url: https://hexaxia-labs.github.io/389ds-srg-baseline/
 repo_url: https://github.com/Hexaxia-Labs/389ds-srg-baseline
 repo_name: Hexaxia-Labs/389ds-srg-baseline

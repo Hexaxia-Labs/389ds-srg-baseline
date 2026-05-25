@@ -6,9 +6,9 @@ All notable changes to this project are documented here. The format is based on
 
 ## [Unreleased]
 
-## [0.1.0-alpha] — 2026-05-25
+## [0.1.0-alpha] - 2026-05-25
 
-Initial alpha. **Draft** — control commands are authored from official 389DS / Red Hat
+Initial alpha. **Draft** - control commands are authored from official 389DS / Red Hat
 documentation and the `dsconf` source but are **not** validated on a live 389 Directory
 Server, and none have been independently reviewed.
 

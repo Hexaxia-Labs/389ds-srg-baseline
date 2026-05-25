@@ -11,12 +11,12 @@ def render_control_block(meta: dict) -> str:
     sev = meta.get("severity", "medium")
     adm = _SEV_ADMONITION.get(sev, "note")
     maps = meta.get("mappings", {}) or {}
-    nist = ", ".join(maps.get("nist_800_53", [])) or "—"
-    srg = ", ".join(maps.get("disa_srg", [])) or "—"
+    nist = ", ".join(maps.get("nist_800_53", [])) or "-"
+    srg = ", ".join(maps.get("disa_srg", [])) or "-"
     check = meta.get("check", {}) or {}
     fix = meta.get("fix", {}) or {}
     lines = []
-    lines.append(f'!!! {adm} "{meta.get("id", "")} — severity: {sev}"')
+    lines.append(f'!!! {adm} "{meta.get("id", "")} - severity: {sev}"')
     lines.append("")
     lines.append("| Field | Value |")
     lines.append("| --- | --- |")

@@ -13,7 +13,7 @@ discussions, and any other project channels).
 
 ## Reporting
 
-Report unacceptable behavior **privately** to the maintainers via GitHub — open a
+Report unacceptable behavior **privately** to the maintainers via GitHub - open a
 private report on the repository's **Security** tab, or contact the maintainer
 [@alamb-hex](https://github.com/alamb-hex). All reports are reviewed and handled
 confidentially.
