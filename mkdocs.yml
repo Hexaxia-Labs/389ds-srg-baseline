@@ -43,3 +43,6 @@ hooks:
 
 plugins:
   - search
+
+extra_css:
+  - stylesheets/extra.css

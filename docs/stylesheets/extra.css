@@ -1,0 +1,7 @@
+/* Keep control IDs (e.g. 389-NS-001) on a single line in the first column of
+   tables, so they don't wrap at the hyphens in some browsers. The Title column
+   (second column) still wraps normally. */
+.md-typeset table td:first-child,
+.md-typeset table th:first-child {
+  white-space: nowrap;
+}
