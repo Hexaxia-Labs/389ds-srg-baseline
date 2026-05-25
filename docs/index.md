@@ -25,6 +25,7 @@ to NIST 800-53 and DISA SRG references.
 - [Methodology & deviations](about/methodology.md) - how controls are written and how to record an approved deviation
 - [Severity & mappings](about/severity-and-mappings.md) - what the labels mean
 - [Roadmap](about/roadmap.md) - automation phases (Bash/Ansible, OpenSCAP, upstream)
+- [About the project & Hexaxia](about/about.md) - who builds this, and why
 
 ## Disclaimer
 
