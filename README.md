@@ -70,7 +70,7 @@ documentation before applying. Expect breaking changes.
 ## About
 
 389DS SRG Baseline is built and maintained by **Aaron Lamb**, founder of
-**[Hexaxia Technologies](https://hexaxia.tech)** - an infrastructure and services
+**[Hexaxia Technologies](https://www.hexaxia.tech)** - an infrastructure and services
 company doing managed IT, consulting, and security/compliance work. Hardening
 directory infrastructure like 389 Directory Server is part of that day job, and
 this baseline grew out of it.
@@ -79,7 +79,7 @@ It is released as open source through **[Hexaxia Labs](https://github.com/Hexaxi
 the shared GitHub home for open-source projects across the Hexaxia group.
 
 Aaron has 20+ years of experience in IT, Linux, and systems infrastructure.
-More at [hexaxia.tech](https://hexaxia.tech).
+More at [www.hexaxia.tech](https://www.hexaxia.tech).
 
 ## License
 
